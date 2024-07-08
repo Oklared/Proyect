@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Inicio.html">Sitio de Educación</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cursos.html">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Instructores.html">Instructores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Inscripción.html">Inscripción</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <!--#### Seccion de inscripcion ####-->    <section class="container mt-4">
+        <div class="contact-form row justify-content-md-center">
+          <div class="col col-md-7 card p-5 bg-danger">
+              <h3 class="row justify-content-md-center">Inscribirme</h3>
+              <form action="#" method="post" class="form">
+                  <div class="form-group">
+                      <label for="name" class="form-label">Nombre:</label>
+                      <input type="text" id="name" class="form-control" placeholder="Nombre(s) Apellido(s)" required>
+                  </div>
+                  <div class="my-3">
+                      <label for="exampleFormControlInput1" class="form-label">Correo Electrónico:</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@ejemplo.com" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="curso">Curso de Interés:</label>
+                      <select id="curso" name="curso" class="form-control">
+                          <option value="algorithm">Algoritmos de Aprendizaje Automático</option>
+                          <option value="imagen">Detección y Procesamiento de imágenes</option>
+                          <option value="design">Diseño de Robóts</option>
+                          <option value="fund-robot">Fundamentos de Robótica</option>
+                          <option value="integration">Integracion de IA en Sistemas Mecánicos</option>
+                          <option value="machine-learning">Machine Learning</option>
+                          <option value="mecanic">Mecanismos Robóticos</option>
+                          <option value="prompt">Prompt Engineer</option>
+                          <option value="neuronal">Redes Neuronales</option>
+                      </select>
+                  </div>
+                  <a class="btn btn-dark mt-3" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Enviar
+                  </a>
+              </form>
+          </div>
+      </div>
+      <!--   Sección de pagos   -->
+      <div class="row justify-content-md-center collapse mt-4" id="collapseExample">
+          <div class="col col-md-7 card p-5 bg-danger" >
+              <h3 class="mb-4">Formas de Pago</h3>
+              <form action="#" method="post">
+                  <div class="accordion" id="accordionExample">
+                      <div class="accordion-item">
+                          <h2 class="accordion-header">
+                              <button class="accordion-button collapsed bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              Tarjeta de Crédito/Débito
+                              </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse bg-danger collapse show accordion-body" data-bs-parent="#accordionExample">
+                              <div class="form-group mb-3">
+                                  <label for="nombreTarjeta">Nombre titular de la Tarjeta:</label>
+                                  <input type="text" class="form-control" id="nombreTarjeta" name="nombreTarjeta"  placeholder="Como aparece en la tarjeta" required>
+                              </div>
+                              <div class="form-group mb-3">
+                                  <label for="numeroTarjeta">Número de Tarjeta:</label>
+                                  <input type="text" class="form-control" id="numeroTarjeta" name="numeroTarjeta" placeholder="xxxx xxxx xxxx xxxx" required>
+                              </div>
+                              <div class="form-group row">
+                                  <div class="col-4">
+                                      <label for="fechaExpiracion">Fecha de Expiración:</label>
+                                      <input type="text" class="form-control" id="fechaExpiracion" name="fechaExpiracion" placeholder="MM/AA" required>
+                                  </div>
+                                  <div class="col-3">
+                                      <label for="ccv">CCV:</label>
+                                      <input type="text" class="form-control" id="ccv" name="ccv" placeholder="123" required>
+                                  </div>
+                              </div>
+                              <button type="submit" class="btn btn-dark mt-3">Realizar Pago</button>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header">
+                              <button class="accordion-button collapsed bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Transferencia/Depósito
+                              </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse bg-danger accordion-body" data-bs-parent="#accordionExample">
+                              <div class="form-group">
+                                  <label for="banco">Seleccione el banco:</label>
+                                  <select class="form-select" aria-label="bancoSeleccionado">
+                                      <option value="1">Banrural</option>
+                                      <option value="2">BAC Credomatic</option>
+                                      <option value="3">Banco Industrial</option>
+                                  </select>
+                              </div>
+                              <div class="form-group">
+                                  <label for="monto" class="mt-2">Monto:</label>
+                                  <input type="text" class="form-control" id="monto" name="monto" required>
+                              </div>
+                              <div class="form-group">
+                                  <label for="comprobante" class="mt-2">No. de comprobante:</label>
+                                  <input type="text" class="form-control" id="comprobante" name="comprobante" required>
+                              </div>
+                              <button type="submit" class="btn btn-dark mt-3">Realizar Pago</button>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                          <h2 class="accordion-header">
+                              <button class="accordion-button collapsed bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Paypal
+                              </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse bg-danger collapse accordion-body text-center" data-bs-parent="#accordionExample">
+                              <p>Realiza el pago a través de la plataforma de <strong>Paypal.</strong></p>
+                              <a href="#" class="btn btn-dark"><strong>Ingresar con paypal</strong></a>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </section>
+
+  <!--Footer-->
+  <footer>
+    <div class="d-flex align-items-start" style="background-color: black; color: white;"></div>
+        <div>
+            <div class="card-body">
+                <div class="p-4">
+                    <h2 class="card-title lh-lg">About our Institution</h2>
+                    <h5 class="card-text fw-lighter lh-base">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad animi, cupiditate molestias exercitationem similique, earum in, asperiores mollitia velit adipisci deleniti! Accusantium ratione molestiae eveniet aliquam dignissimos at, dolor sapiente.
+                    <br>
+                    <p class="fw-normal fw-lighter lh-base">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae a odio, reiciendis sapiente earum illo aspernatur aperiam nulla consectetur hic repellendus, consequatur possimus debitis ducimus natus nostrum velit fuga numquam!
+                    </p>
+                    <h5 class="card-title lh-lg">Follow us on the web</h3>
+                    <button type="button" class="btn btn-outline-danger">X</button>
+                    <button type="button" class="btn btn-outline-danger">Facebook</button>
+                    <button type="button" class="btn btn-outline-danger">Youtube</button>
+                    <button type="button" class="btn btn-outline-danger">Instagram</button>
+                    <button type="button" class="btn btn-outline-danger">TikTok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>

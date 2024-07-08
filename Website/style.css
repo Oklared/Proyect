@@ -1,0 +1,54 @@
+
+/*   Background colors   */
+
+*{
+    color: #E8E8E7;
+}
+
+
+body {
+    background-color: #333333;
+    font-family: 'Mukta', sans-serif;  
+}
+/*  INSCRIPTION  */
+.bg-warning{
+    background-image: linear-gradient(to right, #333333, #E63D10) !important;
+    
+}
+
+.bg-primary{
+    background: #c21d17 !important;
+}
+
+.btn-dark{
+    background: #E63D10 !important;
+    border: none;
+}
+
+.bg-danger{
+    background: #69140F !important;
+    color: #E8E8E7;
+}
+
+/*Color text's*/
+
+h1{
+    color: #5e0505;
+    
+    
+}
+
+h3{
+    color: #E63D10;
+    
+}
+
+/*  border none cards  */
+
+.card{
+    border: CENTER;
+    margin: 10%;
+    
+    
+}
+ 
